@@ -1,0 +1,13 @@
+<div style="height: 500px; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+flex-direction: column;">
+    <h1 class="text-4xl">From Component A</h1>
+      (onButtonClick)
+    <app-component-b (onButtonClick)="dataFromClick = $event" [inputData]="data"></app-component-b>
+    <h3 class="text-2xl">{{ dataFromClick }}</h3>
+
+</div>
+
+
